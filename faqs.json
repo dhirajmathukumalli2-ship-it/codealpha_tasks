@@ -1,0 +1,42 @@
+[
+    {
+        "question": "What are your working hours?",
+        "answer": "Our support team is available from 9:00 AM to 6:00 PM, Monday to Friday."
+    },
+    {
+        "question": "How can I contact customer support?",
+        "answer": "You can contact our customer support team through email or the support section of our website."
+    },
+    {
+        "question": "How do I create an account?",
+        "answer": "Click the Sign Up button on the website and provide the required information to create your account."
+    },
+    {
+        "question": "How can I reset my password?",
+        "answer": "Click on Forgot Password on the login page and follow the instructions sent to your registered email address."
+    },
+    {
+        "question": "How can I update my profile?",
+        "answer": "Log in to your account, open your profile settings, edit the required information, and save the changes."
+    },
+    {
+        "question": "Is my personal information secure?",
+        "answer": "We take reasonable measures to protect user information and maintain account security."
+    },
+    {
+        "question": "How do I delete my account?",
+        "answer": "Open your account settings and contact support if you want to permanently delete your account."
+    },
+    {
+        "question": "Do you provide technical support?",
+        "answer": "Yes, technical support is available through our customer support channels."
+    },
+    {
+        "question": "How long does customer support take to respond?",
+        "answer": "Most support requests receive a response within one business day."
+    },
+    {
+        "question": "Can I use the service on my mobile phone?",
+        "answer": "Yes, the service can be accessed using a modern web browser on a mobile phone."
+    }
+]

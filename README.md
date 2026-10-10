@@ -1,31 +1,114 @@
+\# CodeAlpha FAQ Chatbot
 
-# CodeAlpha Language Translation Tool
 
-## Project Overview
-A web-based Language Translation Tool developed as part of the CodeAlpha Artificial Intelligence Internship.
 
-The tool allows users to enter text, select source and target languages, and view translated results.
+\## CodeAlpha Artificial Intelligence Internship - Task 2
 
-## Features
-- Text input for translation
-- Source and target language selection
-- Translation API integration
-- Display of translated text
-- User-friendly interface
 
-## Technologies Used
-- HTML
-- CSS
-- JavaScript
-- Translation API
 
-## Task
-CodeAlpha Artificial Intelligence Internship
+This project is an FAQ Chatbot developed as part of the CodeAlpha Artificial Intelligence Internship.
 
-Task 1: Language Translation Tool
 
-## Project Link
-[Live Demo](https://replit.com/@11259a295/Language-Translation-Tool)
 
-## Author
-Dhiraj Mathukumalli
+The chatbot uses Natural Language Processing (NLP) techniques to understand user questions and find the most relevant answer from a predefined FAQ dataset.
+
+
+
+\## Features
+
+
+
+\- FAQ-based chatbot
+
+\- Text preprocessing
+
+\- TF-IDF vectorization
+
+\- Cosine similarity for question matching
+
+\- Similarity threshold for unknown questions
+
+\- Flask web interface
+
+\- Interactive chat interface
+
+\- Responsive and simple user interface
+
+
+
+\## Technologies Used
+
+
+
+\- Python
+
+\- Flask
+
+\- NLTK
+
+\- Scikit-learn
+
+\- NumPy
+
+\- HTML
+
+\- CSS
+
+\- JavaScript
+
+
+
+\## How It Works
+
+
+
+1\. The chatbot loads FAQ questions and answers from `faqs.json`.
+
+2\. User input is cleaned using text preprocessing.
+
+3\. FAQ questions are converted into TF-IDF vectors.
+
+4\. The user's question is also converted into a TF-IDF vector.
+
+5\. Cosine similarity is calculated between the user's question and the FAQ questions.
+
+6\. The FAQ with the highest similarity is selected.
+
+7\. If the similarity is below the threshold, the chatbot asks the user to rephrase the question.
+
+8\. Otherwise, the corresponding answer is displayed.
+
+
+
+\## Project Structure
+
+
+
+```text
+
+CodeAlpha\_Task2\_FAQ\_Chatbot/
+
+│
+
+├── app.py
+
+├── chatbot.py
+
+├── faqs.json
+
+├── requirements.txt
+
+├── README.md
+
+├── .gitignore
+
+│
+
+├── templates/
+
+│   └── index.html
+
+│
+
+└── venv/
+
