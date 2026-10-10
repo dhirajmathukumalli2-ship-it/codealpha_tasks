@@ -1,9 +1,9 @@
-from flask import Flask, render_template, request, jsonify
-from chatbot import FAQChatbot
+from flask import Flask, render_template, send_file
+import subprocess
+import os
+import sys
 
 app = Flask(__name__)
-
-chatbot = FAQChatbot("faqs.json")
 
 
 @app.route("/")
@@ -11,22 +11,14 @@ def home():
     return render_template("index.html")
 
 
-@app.route("/ask", methods=["POST"])
-def ask():
-    data = request.get_json()
-
-    question = data.get("question", "").strip()
-
-    if not question:
-        return jsonify({
-            "answer": "Please enter a question."
-        })
-
-    answer = chatbot.get_response(question)
-
-    return jsonify({
-        "answer": answer
-    })
+@app.route("/generate")
+def generate_music():
+    subprocess.run([sys.executable, "generate.py"], check=True)
+    return send_file(
+        "generated_music.mid",
+        as_attachment=True,
+        download_name="generated_music.mid"
+    )
 
 
 if __name__ == "__main__":
